@@ -1,0 +1,57 @@
+oatmealine
+==================================================================
+https://keybase.io/oatmealine
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://puyopuyotetris.rocks
+  * I am oatmealine (https://keybase.io/oatmealine) on keybase.
+  * I have a public key ASAIQXfsjbfi_zZ5ewC1vs-DE7N0EAtHXakkSJex4USpDQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120084177ec8db7e2ff36797b00b5becf8313b374100b475da9244897b1e144a90d0a",
+      "host": "keybase.io",
+      "kid": "0120084177ec8db7e2ff36797b00b5becf8313b374100b475da9244897b1e144a90d0a",
+      "uid": "4d3fb7d373438c5905d5fcd49b623b19",
+      "username": "oatmealine"
+    },
+    "merkle_root": {
+      "ctime": 1579582470,
+      "hash": "c2090eea01d4c2765e6a9df1d51696634a86e48ccc9b7e0b111569b5a3128e23ab5895edfb8d69eb3d281a2bec08ede831666656a72fa96b69f11793c8d3c709",
+      "hash_meta": "07526009eb82982eb93ac87a921f262c05b7e8a7d52c2aeca2dfb6e786229fd6",
+      "seqno": 14304680
+    },
+    "service": {
+      "entropy": "fCGSXuYOztfaa7UJ7uJxt/ne",
+      "hostname": "puyopuyotetris.rocks",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1579582835,
+  "expire_in": 504576000,
+  "prev": "002c55148343e2b036f0f9e76f6db084ef3d68e074638a262e16b52ddb1524c8",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgCEF37I234v82eXsAtb7PgxOzdBALR12pJEiXseFEqQ0Kp3BheWxvYWTESpcCBcQgACxVFIND4rA28Pnnb22whO89aOB0Y4omLha1LdsVJMjEIITb66lmYAmSc/pDo4+S6Z1Xr60IUWOF0+WUX2POQEttAgHCo3NpZ8RAIa+QGqdSiygmL4BI0VRLkbUzL0Ua5Kl04OPX0LSfZ8HtjIuXaPAlhkQWHzA7AXdiR4E32f1UbTG4SRyDnH1mAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIHZVw07VwxWDK9YeXcakYS8kRLKzDSlh9IpSv/WxXeCKo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/oatmealine
+
+==================================================================
