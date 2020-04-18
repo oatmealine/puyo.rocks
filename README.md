@@ -1,3 +1,3 @@
-# oatmealine.github.io
+# oatmealine.github.io / puyo.rocks
 
-my trashy site that i use for experiments, games, etc
+home page ! it has cool stuff,,
