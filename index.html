@@ -1,144 +1,55 @@
-<html><head><style type="text/css">
-body {cursor: url(http://www.rw-designer.com/cursor-extern.php?id=3204);}
-</style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="jill's site">
+    <meta name="author" cpntent="oatmealine">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    
+    <!-- social tags-->
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/puyo.png">
+    <meta property="og:site_name" content="puyo.rocks">
+    <meta property="og:title" content="puyo.rocks">
+ 	<meta property="og:description" content="jill's site">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="/assets/fallbackbg.png">
+    <meta name="twitter:title" content="puyo.rocks">
+    <meta name="twitter:description" content="jill's site">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js" type="text/javascript"></script>
+    <script src="./sketch.js"></script>
+    <script src="./main.js"></script>
+    <link href="./main.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <title>puyo.rocks</title>
+  </head>
+  <body>
+  	<!-- this is for the copypaste thing please ignore -->
+	<input type="text" value="oatmealine#1704" id="discordclipboard">
 
+  	<div id="main-bg">
+        <div id="main">
+            <b><img src="assets/puyo.png" id="puyo" width="40px" height="40px"> puyo.rocks</b><br>
+            <br>
+	
+            <span class="bige">hi im jill <i>(also known as oatmealine)</i></span><br><br>
+            i do whatever funny stuff i decide i want to do<br>
+            am also a typescript dev, rarely <a class="coollink" href="https://oatmealine.itch.io"><img src="assets/itchio.png" height="18px" width="18px">gamedev</a>, <a class="coollink" href="https://soundcloud.com/oatmealine/"><img src="assets/soundcloud.png" height="18px" width="18px">composer</a> and <a class="coollink" href="https://notitg.heysora.net/">notitg</a> modder<br>
 
-
-	<style type="text/css">
-		body {
-			background-color: red;
-			transition: background-color 3s;
-		}
-ok {
-background-color: white;
-margin-left: 20%;
-margin-right: 20%;
-border: 3px dotted black;
-padding: 10px 10px 10px 10px;
-font-family: sans-serif;
-border-radius: 6px;
-}
-changeimg:hov {
-    -webkit-filter: brightness(200%);
-    filter: brightness(200%);
-}
-	</style>
-	<meta name="google-site-verification" content="1vAOgW1QI0LMJ_TuclDUO6LqheQdzr5_q8keVvZ7nHU" />
-</head>
-<body style="background-color: green;">
-	<script type="text/javascript">
-		var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
-
-		var i = 1;
-
-		window.setInterval(function(){
-			document.body.style.backgroundColor = colors[i];
-			i++;
-			if (i === colors.length){
-				i=0;
-			}
-		}, 3000);
-var nVer = navigator.appVersion;
-        var nAgt = navigator.userAgent;
-        var browser = navigator.appName;
-        var version = '' + parseFloat(navigator.appVersion);
-        var majorVersion = parseInt(navigator.appVersion, 10);
-        var nameOffset, verOffset, ix;
-var os = "unknown";
-        var clientStrings = [
-            {s:'Windows 10', r:/(Windows 10.0|Windows NT 10.0)/},
-            {s:'Windows 8.1', r:/(Windows 8.1|Windows NT 6.3)/},
-            {s:'Windows 8', r:/(Windows 8|Windows NT 6.2)/},
-            {s:'Windows 7', r:/(Windows 7|Windows NT 6.1)/},
-            {s:'Windows Vista', r:/Windows NT 6.0/},
-            {s:'Windows Server 2003', r:/Windows NT 5.2/},
-            {s:'Windows XP', r:/(Windows NT 5.1|Windows XP)/},
-            {s:'Windows 2000', r:/(Windows NT 5.0|Windows 2000)/},
-            {s:'Windows ME', r:/(Win 9x 4.90|Windows ME)/},
-            {s:'Windows 98', r:/(Windows 98|Win98)/},
-            {s:'Windows 95', r:/(Windows 95|Win95|Windows_95)/},
-            {s:'Windows NT 4.0', r:/(Windows NT 4.0|WinNT4.0|WinNT|Windows NT)/},
-            {s:'Windows CE', r:/Windows CE/},
-            {s:'Windows 3.11', r:/Win16/},
-            {s:'Android', r:/Android/},
-            {s:'Open BSD', r:/OpenBSD/},
-            {s:'Sun OS', r:/SunOS/},
-            {s:'Linux', r:/(Linux|X11)/},
-            {s:'iOS', r:/(iPhone|iPad|iPod)/},
-            {s:'Mac OS X', r:/Mac OS X/},
-            {s:'Mac OS', r:/(MacPPC|MacIntel|Mac_PowerPC|Macintosh)/},
-            {s:'QNX', r:/QNX/},
-            {s:'UNIX', r:/UNIX/},
-            {s:'BeOS', r:/BeOS/},
-            {s:'OS/2', r:/OS\/2/},
-            {s:'Search Bot', r:/(nuhk|Googlebot|Yammybot|Openbot|Slurp|MSNBot|Ask Jeeves\/Teoma|ia_archiver)/}
-        ];
-        for (var id in clientStrings) {
-            var cs = clientStrings[id];
-            if (cs.r.test(nAgt)) {
-                os = cs.s;
-                break;
-            }
-        }
-
-        var osVersion = "unknown";
-
-        if (/Windows/.test(os)) {
-            osVersion = /Windows (.*)/.exec(os)[1];
-            os = 'Windows';
-        }
-
-        switch (os) {
-            case 'Mac OS X':
-                osVersion = /Mac OS X (10[\.\_\d]+)/.exec(nAgt)[1];
-                break;
-
-            case 'Android':
-                osVersion = /Android ([\.\_\d]+)/.exec(nAgt)[1];
-                break;
-
-            case 'iOS':
-                osVersion = /OS (\d+)_(\d+)_?(\d+)?/.exec(nVer);
-                osVersion = osVersion[1] + '.' + osVersion[2] + '.' + (osVersion[3] | 0);
-                break;
-        }
-if(os.startsWith("Windows") || os.startsWith("Mac OS X")) {
-var string = "use linux lol"
-}
-if(os.startsWith("iOS")) {
-var string = "ios sucks ass go buy an android phone"
-} else if(os.startsWith("Android")) {
-var string = "youre cool but use pc pls thank"
-}
-if(os.startsWith("Linux")) {
-var string = "youre cool"
-}
-if(string === undefined) {
-var string = "what"
-}
-document.write("hey, here's some os advice from fox:<br>"+string)
-	</script>hey, here's some os advice from fox:<br>youre cool
-
-
- <center>
-<br><br>
-<div class="ok">
-welcome to my site!!!<br>
-i make very great site yes...<br>
-here listen to a song i have!!<br>
-<img src="change.png" class="changeimg"><br><img src="leap.png" class="changeimg"><br>
-<iframe src="https://www.youtube.com/embed/EGWSijvWxFI" gesture="media" allow="encrypted-media" allowfullscreen="" width="560" height="315" frameborder="0"></iframe><br>
-heres another song!! i like it a lot!!!!! its very grown-up, you get the reference???? lol<br>
-ok bye :)) i add more to site soon.... just wait!!!!
-<br>
-<!-- hitwebcounter Code START -->
-<a href="http://www.hitwebcounter.com" target="_blank">
-<img src="http://hitwebcounter.com/counter/counter.php?page=6950057&amp;style=0012&amp;nbdigits=5&amp;type=page&amp;initCount=0" title="Hit Web Stats" alt="Hit Web Stats" border="0">
-</a>                                        <br>
-                                        <!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com" title="" target="_blank" style="font-family: ; 
-                                        font-size: px; color: #; text-decoration:  ;">&lt;&gt;                                        
-                                        </a>this many visits we got guys good job! idk if it works though pls email me if it works at krakaka088@gmail.com :)
-                            
-</div><br><br><br>
-potatoe
-</center></body></html>
+            <br>
+            <span id="socials">
+            <a href="https://koyu.space/@oatmealine"><span class="icon" id="koyu"><img alt="koyu.space" src="assets/koyu.png"></span></a>
+            <span class="icon tooltip" id="discord" onclick="copyDiscord()" onmouseout="mouseOut()"><img alt="discord" src="assets/discord.png">
+                <span class="tooltiptext" id="tag">oatmealine#1704</span>
+            </span>
+            <a href="https://www.youtube.com/channel/UCrRQO0JcAmrv0hAF5Do2Q5w"><span class="icon" id="youtube"><img alt="youtube" src="assets/youtube.png"></span></a>
+            <a href="https://github.com/oatmealine"><span class="icon" id="github"><img alt="github" src="assets/github.png"></span></a>
+            </span>
+            <br><br>
+            💖 <a class="coollink" href="http://i-am.sky-3.zone/">sky-3.zone</a>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "cozette";
+  src: url("./assets/CozetteVector Regular.ttf");
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+body {
+    background-color: #000;
+    color: #eee;
+    font-family: "cozette", sans-serif;
+    font-size: 18px;
+    background: center / cover no-repeat url("./assets/fallbackbg.png");
+}
+
+#bg {
+    position: absolute;
+    z-index: -1;
+}
+
+#defaultCanvas0 {
+	/*opacity: 0;*/
+    filter: brightness(50%);
+}
+
+b {
+    height: 45px;
+    line-height: 45px;
+    font-size: 45px;
+    vertical-align: bottom;
+}
+
+.bige {
+	font-size: 28px;
+}
+
+.coollink {
+	color: white;
+	text-decoration: underline dotted white;
+	
+	transition: text-decoration 0.3s, color 0.3s;
+}
+
+.coollink:visited {
+	color: #aaa;
+	text-decoration: underline dotted #aaa;
+	transition: text-decoration 0.3s, color 0.3s;
+}
+
+.coollink:hover {
+	color: white;
+	text-decoration: underline dotted white;
+	transition: text-decoration 0.3s, color 0.3s;
+}
+
+#puyo:hover {
+	animation: spin 1s linear infinite;
+}
+
+#main-bg {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    position: fixed;
+    display: block;
+    opacity: 0;
+    background-color: rgba(20, 20, 20, 0);
+    z-index: 1;
+
+    margin: 10px;
+    padding: 10px;
+
+    animation-name: fadein-out;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+
+    /*box-shadow: 16px 16px black;
+    
+    border: 5px solid rgb(20, 20, 20);
+    border-radius: 5px;*/
+}
+
+#main {
+    background: none;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+
+    text-align: center;
+
+    text-shadow: 0px 0px 10px black;
+
+    position: realtive;
+    top: 50%;
+    transform: translateY(35%);
+}
+
+.icon {
+    border: 5px solid #222;
+    border-radius: 32px;
+    background-color: #222;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+
+    margin: 5px;
+    
+    transition: width 0.3s, height 0.3s, border-color 0.3s, background-color 0.3s;
+}
+
+.icon:hover {
+    border: 5px solid #111;
+    background-color: #111;
+    
+    width: 36px;
+    height: 36px;
+}
+
+.icon:hover img {
+    width: 36px;
+    height: 36px;
+}
+
+.icon img {
+    width: 32px;
+    height: 32px;
+    transition: width 0.3s, height 0.3s;
+}
+
+#koyu {
+    background-color: #FE53E1 !important;
+    border-color: #FE53E1 !important;
+}
+#koyu:hover {
+	background-color: #ED42D0 !important;
+	border-color: #ED42D0 !important;
+}
+
+#discord {
+    background-color: #7289DA !important;
+    border-color: #7289DA !important;
+    
+    cursor: pointer;
+}
+#discord:hover {
+	background-color: #6178CF !important;
+	border-color: #6178CF !important;
+}
+
+#youtube {
+    background-color: #FF0000 !important;
+    border-color: #FF0000 !important;
+}
+#youtube:hover {
+	background-color: #EE0000 !important;
+	border-color: #EE0000 !important;
+}
+
+#discordclipboard {
+	display: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: rgba(10, 10, 10, 0.5);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #111 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+} 
+
+/* animations */
+@keyframes fadein-out {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes spin {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
