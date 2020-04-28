@@ -4,7 +4,7 @@ let video;
 
 function preload(){
   awsmShader = loadShader('effect.vert', 'effect.frag');
-  video = createVideo('assets/gameplay.mp4');
+  video = createVideo('assets/gameplay.webm');
 }
 
 function setup() {
