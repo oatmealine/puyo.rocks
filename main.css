@@ -3,24 +3,38 @@
   src: url("./assets/CozetteVector Regular.ttf");
 }
 
-html, body {margin: 0; height: 100%; overflow: hidden}
+html, body {
+	margin: 0;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
 
 body {
     background-color: #000;
-    color: #eee;
     font-family: "cozette", sans-serif;
     font-size: 18px;
-    background: center / cover no-repeat url("./assets/fallbackbg.png");
+    transition: all 0.5s;
+		color: rgba(0, 0, 0, 0);
+
+		background-color: #222;
+		background: center repeat url("./assets/notitgbackground.png");
 }
 
 #bg {
-    position: absolute;
+	font-size: 0px;
+		position: absolute;
+		width: 100%;
+		height: 100%;
     z-index: -1;
+		background: center / cover no-repeat url("./assets/fallbackbg.png");
 }
 
 #defaultCanvas0 {
 	/*opacity: 0;*/
+	font-size: 0px;
+	color: rgba(0, 0, 0, 0);
     filter: brightness(50%);
+		background: center / cover no-repeat url("./assets/fallbackbg.png");
 }
 
 b {
@@ -35,22 +49,35 @@ b {
 }
 
 .coollink {
-	color: white;
-	text-decoration: underline dotted white;
+	color: #aaaaee;
+	text-decoration: underline dotted #aae;
 	
 	transition: text-decoration 0.3s, color 0.3s;
 }
 
 .coollink:visited {
-	color: #aaa;
-	text-decoration: underline dotted #aaa;
+	color: #baaaee;
+	text-decoration: underline dotted #bae;
 	transition: text-decoration 0.3s, color 0.3s;
 }
 
 .coollink:hover {
-	color: white;
-	text-decoration: underline dotted white;
+	color: #fff;
+	text-decoration: underline dotted #fff;
 	transition: text-decoration 0.3s, color 0.3s;
+}
+
+.lamelink {
+	color: #fff;
+	text-decoration: none;
+}
+.lamelink:visited {
+	color: #fff;
+	text-decoration: none;
+}
+.lamelink:hover {
+	color: #fff;
+	text-decoration: none;
 }
 
 #puyo:hover {
@@ -62,8 +89,7 @@ b {
     height: 100%;
     top: 0%;
     left: 0%;
-    position: fixed;
-    display: block;
+    position: absolute;
     opacity: 0;
     background-color: rgba(20, 20, 20, 0);
     z-index: 1;
@@ -74,6 +100,7 @@ b {
     animation-name: fadein-out;
     animation-duration: 0.4s;
     animation-fill-mode: both;
+    color: #eee;
 
     /*box-shadow: 16px 16px black;
     
@@ -82,24 +109,46 @@ b {
 }
 
 #main {
-    background: none;
     height: 100%;
-    width: 100%;
-    overflow-y: auto;
+		width: 100%;
 
     text-align: center;
 
     text-shadow: 0px 0px 10px black;
 
-    position: realtive;
-    top: 50%;
     transform: translateY(35%);
     
     opacity: 1;
-    transition: all 0.25s;
 }
 
-.icon {
+#scrolldown {
+	position: absolute;
+	background: none;
+	text-align: center;
+	text-shadow: 0px 0px 10px black;
+	opacity: 0.9;
+
+	width: 100%;
+	top: 90%;
+
+	font-size: 30px;
+}
+
+#modfiles {
+	color: #eee;
+	position: absolute;
+	top: 100%;
+	height: 100%;
+	width: 97%;
+	padding: 2%;
+
+	z-index: 2;
+
+	text-align: center;
+}
+
+
+.icon, .iconregular {
     border: 5px solid #222;
     border-radius: 32px;
     background-color: #222;
@@ -109,12 +158,12 @@ b {
 
     margin: 5px;
     
-    transition: width 0.3s, height 0.3s, border-color 0.3s, background-color 0.3s;
+		transition: width 0.3s, height 0.3s, border-color 0.3s, background-color 0.3s;
 }
 
 .icon:hover {
-    border: 5px solid #111;
-    background-color: #111;
+    border: 5px solid #555;
+    background-color: #555;
     
     width: 36px;
     height: 36px;
@@ -125,10 +174,14 @@ b {
     height: 36px;
 }
 
-.icon img {
+.icon img, .iconregular img {
     width: 32px;
     height: 32px;
-    transition: width 0.3s, height 0.3s;
+    transition: width 0.1s, height 0.1s, background-color 0.1s, border-color 0.1s;
+}
+.iconregular:hover {
+	border: 5px solid #999;
+	background-color: #999;
 }
 
 #koyu {
@@ -136,8 +189,8 @@ b {
     border-color: #FE53E1 !important;
 }
 #koyu:hover {
-	background-color: #ED42D0 !important;
-	border-color: #ED42D0 !important;
+	background-color: #DC31E0 !important;
+	border-color: #DC31D0 !important;
 }
 
 #discord {
@@ -147,8 +200,8 @@ b {
     cursor: pointer;
 }
 #discord:hover {
-	background-color: #6178CF !important;
-	border-color: #6178CF !important;
+	background-color: #5067BC !important;
+	border-color: #5067BC !important;
 }
 
 #youtube {
@@ -156,8 +209,101 @@ b {
     border-color: #FF0000 !important;
 }
 #youtube:hover {
-	background-color: #EE0000 !important;
-	border-color: #EE0000 !important;
+	background-color: #AA0000 !important;
+	border-color: #AA0000 !important;
+}
+
+
+#worms {
+	color: #eee;
+  background: center / cover no-repeat url("./assets/wormsbg.png");
+	background-color: #111;
+	animation-delay: 0.1;
+}
+#sticky {
+	color: #eee;
+  background: center / cover no-repeat url("./assets/745stickybg.png");
+	background-color: #300;
+	animation-delay: 0.2;
+}
+#tungtiied {
+	color: #fff;
+  background: center / cover no-repeat url("./assets/tungtiiedbg.png");
+	background-color: #111;
+	animation-delay: 0.3;
+}
+#thanks {
+	color: #fff;
+  background: center / cover no-repeat url("./assets/thanksbg.png");
+	background-color: #144;
+	animation-delay: 0.4;
+}
+
+
+.file {
+	text-align: left;
+	width: 50%;
+	position: relative;
+	display: inline-block;
+	color: #eee;
+	background-color: #000;
+	box-shadow: 0px 0px 20px 3px #111;
+	margin: 2%;
+	margin-right: 0px;
+	padding: 2%;
+	border-radius: 25px;
+
+	text-shadow: 0px 0px 10px black;
+
+	animation-name: fadein-out;
+	animation-duration: 0.8s;
+	animation-fill-mode: both;
+}
+
+.file:visible {
+	animation-name: fadein-out;
+	animation-duration: 0.4s;
+	animation-fill-mode: both;
+}
+
+.modfilestitle {
+	font-size: 30px;
+}
+.modfilestitle img {
+	height: 32px;
+	width: 32px;
+}
+
+.difficulty {
+	font-size: 36px;
+	text-shadow: none;
+	float: right;
+	color: #eee;
+}
+
+.expert, .challenge, .slumpage {
+	font-size: 36px;
+	text-shadow: -1px 1px 0 #000,
+		1px 1px 0 #000,
+ 		1px -1px 0 #000,
+		-1px -1px 0 #000;
+}
+
+.expert {
+	color: #8200a1;
+}
+.challenge {
+	color: #605ace;
+}
+.slumpage {
+	color: #b5b8ba;
+}
+
+.modname {
+	font-size: 24px;
+}
+.tiny {
+	font-size: 12px;
 }
 
 #discordclipboard {
