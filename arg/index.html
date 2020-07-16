@@ -1,15 +1,13 @@
 <html>
 	<head>
 		<title>hi</title>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
 		<script>
-			const checksum = '99b69b3c2d63d879ce6bf537840ae9bc';
+			const checkRegex = /[a-zA-Z]{6,7}/;
 
 			function calc(key) {
 				// hi ! welcome to hell
 				// ive intentionally not minized the code to make this not bullshit, but that doesnt mean its readable
-				// changing the checksum wont help, itll only circumvent the checksum and generate an invalid invite
+				// changing the regex wont help, itll only circumvent the regex and generate an invalid invite
 				// have fun, nerd
 				// - oatmealine
 		
@@ -45,7 +43,7 @@
 				});
 				let r = f.join('') + 'g';
 		
-				if (CryptoJS.MD5(r).toString() !== checksum) {
+				if (!checkRegex.test(r)) {
 					return null;
 				}
 		
