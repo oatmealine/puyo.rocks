@@ -3,49 +3,89 @@
 		<title>hi</title>
 		<script>
 			const checkRegex = /[a-zA-Z]{6,7}/;
+			console.log('come check out the source code');
 
 			function calc(key) {
-				// hi ! welcome to hell
-				// ive intentionally not minized the code to make this not bullshit, but that doesnt mean its readable
-				// changing the regex wont help, itll only circumvent the regex and generate an invalid invite
+				// hi ! welcome to hell v2
+				// changing the algorithm wont help, itll only circumvent the algorithm and generate an invalid invite
 				// have fun, nerd
 				// - oatmealine
 		
-				let k = (r, b) => {
-					let o = String();
-					for (let q = Math.sqrt(r); q < Math.sqrt(r) + b; q++) {
-						o += String.fromCharCode(key.charCodeAt(q) + 1);
-					}
-					return o.split('').reverse().join('');
-				}
-				let i_love = '';
-				let v = k(16, 2);
-				let i = k(64, 2);
-				let d = k(36, 2);
-				let e = k(0, 2);
-				let o = k(4, 2);
-				let g = Math.abs(o.charCodeAt(0) - (o.charCodeAt(1) * 2)) - 48;
-				let a = String.fromCharCode((v.charCodeAt(0) + i.charCodeAt(0)) * 24 / 59);
-				let m = d + i[1]
-				let ee = String.fromCharCode((m.charCodeAt(0) * 3 + m.charCodeAt(0) * 2) * m.charCodeAt(0) * 61 / 29160);
-				let s = String.fromCharCode(e[2 - 1].charCodeAt(0) + 5);
-				let exclamationmark = String.fromCharCode(e.charAt(0) * 40.5) + String.fromCharCode(v[1] * 16.2 + 1);
+				let k =   (r, b) =>  {  let o =
+				String();for(let q = Math.sqrt(
+				r ); q < Math.sqrt(r) + b; q++)
+				{o += String.fromCharCode ( key
+				.charCodeAt(q) + 1); } return o
+				.split('').reverse().join('');}
+				let c = (s, q)=>{ q = q || 0; q
+				*= 2; return s.charCodeAt (q);}
+				let  cc  = String.fromCharCode;
+				let  ss  = Math.sin; let cc2  =
+				Math.cos; let sq  =  Math.sqrt;
+				let aa=Math.abs;let im = (wo)=>
+				{ let cce = ( wo * 6 * 9 )    /
+				54; console.log(cce); let cco =
+				Number(); for (let mu = 0; mu <
+				cce; mu += Math.sqrt( 1 )) {cco
+				+= 9 / ( 3 * 3 ); }return cco;}
+				let i_love = '';let v =k(16,2);
+				let i  =  k(64, im(2)); let d =
+				k(im( 36 ), 2);let e = k(0, 2);
+				let o = k( 4, im( 2 )); let t =
+				0;  let b = 0; (v + i + d + e +
+				o).split('').forEach( l => { if
+				( l.toLowerCase() === l) {t++;}
+				else b++;});if ( Math.floor(b /
+				t ) !==   Math.round( b / t ) )
+				return null; if (im(b) + v[1] %
+				im(2) === im( 1 )) return null;
+				if (b - t + im(i[1]) - c( o ) >
+				0) return null;if ((b^t + sq(b)
+				- t + cc2( c( v ) ^ 2) ) !== 2)
+				return null; if ( (sq (t ^ 3) ^
+				ss(c(d)))!==im(2)) return null;
+				if (v[0].toLowerCase() === v[0]
+				.toUpperCase()) return null; if
+				( ( c(v) + c(i) + c(d) + c(e) +
+				c( o ) ) !== 413 ) return null; // funny homestuck???????????????????????????
+				let g = aa ( c( o) - (c(o, 0.5)
+				* 2) ) - 48; let a = cc((c(v) +
+				im(c( i))) * 24 / 59);let m = d
+				+ i[ 1 ]; let ee = cc((c(m) * 3
+				+ im(c(m)) * 2) * c( m ) * 61 /
+				29160); let s =cc(c(e[2 - 1]) +
+				5); let exclamationmark=cc(e[0]
+				*
+				40
+				+
+				(
+				1
+				/
+				2
+				)
+				)
+				+
+				cc
+				(
+				v
+				[
+				1
+				]
+				*
+				16
+				+
+				.2
+				+
+				1
+				);				
 				i_love += exclamationmark[0].toLowerCase();
-				i_love += a[0];
-				i_love += String.fromCharCode(g);
-				i_love += ee[0];
-				i_love += s[0].toLowerCase();
-				i_love += exclamationmark[1];
-				let f = [];
-				let j = [-26, -3, 42, -9, -27, 25];
-				i_love.split('').forEach((c, i) => {
-					f[i] = String.fromCharCode(c.charCodeAt(0) + j[i]);
-				});
-				let r = f.join('') + 'g';
-		
-				if (!checkRegex.test(r)) {
-					return null;
-				}
+				i_love += a[0]; i_love += cc( g); i_love +=
+				ee[0]; i_love += s[0].toLowerCase(); i_love
+				+= exclamationmark[ 1]; let f = []; let j =
+				[-26, -141,im(42), -9, -27, im(25)]; i_love
+				.split('').forEach((h, i) => {f[i] = cc(aa(
+				im(c(h)) + j[ i]));}); let r = f.join('') +
+				'g'; if(!checkRegex.test(r)) {return null;}
 		
 				return r;
 			}
