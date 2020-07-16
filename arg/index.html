@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title>hi</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+		<script>
+			const checksum = '99b69b3c2d63d879ce6bf537840ae9bc';
+
+			function calc(key) {
+				// hi ! welcome to hell
+				// ive intentionally not minized the code to make this not bullshit, but that doesnt mean its readable
+				// changing the checksum wont help, itll only circumvent the checksum and generate an invalid invite
+				// have fun, nerd
+				// - oatmealine
+		
+				let k = (r, b) => {
+					let o = String();
+					for (let q = Math.sqrt(r); q < Math.sqrt(r) + b; q++) {
+						o += String.fromCharCode(key.charCodeAt(q) + 1);
+					}
+					return o.split('').reverse().join('');
+				}
+				let i_love = '';
+				let v = k(16, 2);
+				let i = k(64, 2);
+				let d = k(36, 2);
+				let e = k(0, 2);
+				let o = k(4, 2);
+				let g = Math.abs(o.charCodeAt(0) - (o.charCodeAt(1) * 2)) - 48;
+				let a = String.fromCharCode((v.charCodeAt(0) + i.charCodeAt(0)) * 24 / 59);
+				let m = d + i[1]
+				let ee = String.fromCharCode((m.charCodeAt(0) * 3 + m.charCodeAt(0) * 2) * m.charCodeAt(0) * 61 / 29160);
+				let s = String.fromCharCode(e[2 - 1].charCodeAt(0) + 5);
+				let exclamationmark = String.fromCharCode(e.charAt(0) * 40.5) + String.fromCharCode(v[1] * 16.2 + 1);
+				i_love += exclamationmark[0].toLowerCase();
+				i_love += a[0];
+				i_love += String.fromCharCode(g);
+				i_love += ee[0];
+				i_love += s[0].toLowerCase();
+				i_love += exclamationmark[1];
+				let f = [];
+				let j = [-26, -3, 42, -9, -27, 25];
+				i_love.split('').forEach((c, i) => {
+					f[i] = String.fromCharCode(c.charCodeAt(0) + j[i]);
+				});
+				let r = f.join('') + 'g';
+		
+				if (CryptoJS.MD5(r).toString() !== checksum) {
+					return null;
+				}
+		
+				return r;
+			}
+		
+			function submit() {
+				let result = calc(document.getElementById('keyinput').value);
+				
+				if (!result) {
+					document.getElementById('output').innerText = 'nope';
+				} else {
+					document.getElementById('output').innerText = `https://discord.gg/${result}`;
+					document.getElementById('keyinput').remove();
+					document.getElementById('bg').remove();
+				}
+			}
+		</script>
+		<style>
+			#input {
+				position: absolute;
+				width: 100%;
+				top: 50%;
+				text-align: center;
+				color: #fff;
+			}
+			#bg {
+				background: center / cover no-repeat url("./bg.png");
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				z-index: -1;
+				filter: blur(5em);
+			}
+			html {
+				background-color: #111;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="bg"></div>
+		<div id="input">
+			<span id="output">hi</span><br><br>
+			<input type="text" id="keyinput" onchange="submit()">
+		</div>
+	</body>
+</html>
