@@ -220,6 +220,12 @@ b {
 	background-color: #111;
 	animation-delay: 0.1;
 }
+#wakeup {
+	color: #eee;
+  background: center / cover no-repeat url("./assets/wakeupbg.png");
+	background-color: #111;
+	animation-delay: 0.1;
+}
 #sticky {
 	color: #eee;
   background: center / cover no-repeat url("./assets/745stickybg.png");
