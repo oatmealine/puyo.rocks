@@ -204,6 +204,15 @@ b {
 	border-color: #5067BC !important;
 }
 
+#song {
+    background-color: #aaf !important;
+    border-color: #aaf !important;
+}
+#song:hover {
+	background-color: #99e !important;
+	border-color: #99e !important;
+}
+
 #youtube {
     background-color: #FF0000 !important;
     border-color: #FF0000 !important;
@@ -214,35 +223,40 @@ b {
 }
 
 
-#worms {
+#theyaremanycolors {
 	color: #eee;
-  background: center / cover no-repeat url("./assets/wormsbg.png");
+  background: center / cover no-repeat url("./assets/colorsbg.png");
 	background-color: #111;
-	animation-delay: 0.1;
+}
+#fuckwiththebaddest {
+	color: #fff;
+  background: center / cover no-repeat url("./assets/fuckbg.png");
+	background-color: #111;
 }
 #wakeup {
 	color: #eee;
   background: center / cover no-repeat url("./assets/wakeupbg.png");
 	background-color: #111;
-	animation-delay: 0.1;
+}
+#worms {
+	color: #eee;
+  background: center / cover no-repeat url("./assets/wormsbg.png");
+	background-color: #111;
 }
 #sticky {
 	color: #eee;
   background: center / cover no-repeat url("./assets/745stickybg.png");
 	background-color: #300;
-	animation-delay: 0.2;
 }
 #tungtiied {
 	color: #fff;
   background: center / cover no-repeat url("./assets/tungtiiedbg.png");
 	background-color: #111;
-	animation-delay: 0.3;
 }
 #thanks {
 	color: #fff;
   background: center / cover no-repeat url("./assets/thanksbg.png");
 	background-color: #144;
-	animation-delay: 0.4;
 }
 
 
