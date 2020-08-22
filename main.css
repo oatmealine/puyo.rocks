@@ -185,12 +185,12 @@ b {
 }
 
 #koyu {
-    background-color: #ff9800 !important;
-    border-color: #ff9800 !important;
+    background-color: #333 !important;
+    border-color: #333 !important;
 }
 #koyu:hover {
-	background-color: #ffa911 !important;
-	border-color: #ffa911 !important;
+	background-color: #222 !important;
+	border-color: #222 !important;
 }
 
 #discord {
