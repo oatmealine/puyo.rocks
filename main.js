@@ -18,5 +18,5 @@ function copyDiscord() {
 
 function mouseOut() {
   let tooltip = document.getElementById("tag");
-  tooltip.innerHTML = "oatmealine#1704";
+  tooltip.innerHTML = "oatmealine#3101";
 }

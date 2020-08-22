@@ -14,10 +14,10 @@ body {
     font-family: "cozette", sans-serif;
     font-size: 18px;
     transition: all 0.5s;
-		color: rgba(0, 0, 0, 0);
+	color: rgba(0, 0, 0, 0);
 
-		background-color: #222;
-		background: center repeat url("./assets/notitgbackground.png");
+	background-color: #222;
+	background: center repeat url("./assets/notitgbackground.png");
 }
 
 #bg {
@@ -101,6 +101,7 @@ b {
     animation-duration: 0.4s;
     animation-fill-mode: both;
     color: #eee;
+    
 
     /*box-shadow: 16px 16px black;
     
