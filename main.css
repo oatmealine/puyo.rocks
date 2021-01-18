@@ -313,6 +313,8 @@ b {
 	animation-fill-mode: both;
 
 	font-family: 'cabin';
+
+	min-width: 500px;
 }
 
 .file:visible {
