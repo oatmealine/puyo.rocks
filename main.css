@@ -203,12 +203,12 @@ b {
 }
 
 #koyu {
-    background-color: #333 !important;
-    border-color: #333 !important;
+    background-color: #ff9800 !important;
+    border-color: #ff9800 !important;
 }
 #koyu:hover {
-	background-color: #222 !important;
-	border-color: #222 !important;
+	background-color: #ffa911 !important;
+	border-color: #ffa911 !important;
 }
 
 #discord {
