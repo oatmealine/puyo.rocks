@@ -1,4 +1,12 @@
 @font-face {
+  font-family: "monogram";
+  src: url("./assets/monogram.ttf");
+}
+@font-face {
+  font-family: "cabin";
+  src: url("./assets/Cabin-Regular.ttf");
+}
+@font-face {
   font-family: "cozette";
   src: url("./assets/CozetteVector Regular.ttf");
 }
@@ -11,8 +19,8 @@ html, body {
 
 body {
     background-color: #000;
-    font-family: "cozette", sans-serif;
-    font-size: 18px;
+    font-family: "monogram", sans-serif;
+    font-size: 24px;
     transition: all 0.5s;
 	color: rgba(0, 0, 0, 0);
 
@@ -38,14 +46,23 @@ body {
 }
 
 b {
-    height: 45px;
-    line-height: 45px;
-    font-size: 45px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 36px;
     vertical-align: bottom;
+		font-family: "cozette";
+}
+
+.modfilestitle {
+	font-family: "cozette";
+}
+
+.pronouns {
+	font-size: 16px;
 }
 
 .bige {
-	font-size: 28px;
+	font-size: 32px;
 }
 
 .coollink {
@@ -224,6 +241,21 @@ b {
 }
 
 
+#obama {
+	color: #fff;
+  background: center / cover no-repeat url("./assets/obamabg.png");
+	background-color: #232;
+}
+#onef {
+	color: #fff;
+  background: center / cover no-repeat url("./assets/1fbg.png");
+	background-color: #006;
+}
+#starfactory {
+	color: #111;
+  background: center / cover no-repeat url("./assets/starfactorybg.png");
+	background-color: #fff;
+}
 #theyaremanycolors {
 	color: #eee;
   background: center / cover no-repeat url("./assets/colorsbg.png");
@@ -279,6 +311,8 @@ b {
 	animation-name: fadein-out;
 	animation-duration: 0.8s;
 	animation-fill-mode: both;
+
+	font-family: 'cabin';
 }
 
 .file:visible {
@@ -302,7 +336,7 @@ b {
 	color: #eee;
 }
 
-.expert, .challenge, .slumpage {
+.hard, .expert, .challenge, .slumpage {
 	font-size: 36px;
 	text-shadow: -1px 1px 0 #000,
 		1px 1px 0 #000,
