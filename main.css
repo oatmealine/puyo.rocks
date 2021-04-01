@@ -323,6 +323,27 @@ b {
 	animation-fill-mode: both;
 }
 
+#ihavesex {
+	text-align: left;
+	width: 50%;
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	background-color: #000;
+  background: url("./assets/sexbg.gif");
+
+	animation-name: fadein-out;
+	animation-duration: 0.8s;
+	animation-fill-mode: both;
+
+	font-family: 'Times New Roman';
+
+	min-width: 500px;
+	margin: 2%;
+	margin-right: 0px;
+	padding: 2%;
+}
+
 .modfilestitle {
 	font-size: 30px;
 }
