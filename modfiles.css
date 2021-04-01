@@ -1,0 +1,248 @@
+@font-face {
+  font-family: "monogram";
+  src: url("./assets/monogram.ttf");
+}
+@font-face {
+  font-family: "cabin";
+  src: url("./assets/Cabin-Regular.ttf");
+}
+@font-face {
+  font-family: "cozette";
+  src: url("./assets/CozetteVector Regular.ttf");
+}
+
+html, body {
+	margin: 0;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+    background-color: #000;
+    font-family: "monogram", sans-serif;
+    font-size: 1.6em;
+    transition: all 0.5s;
+	color: rgba(0, 0, 0, 0);
+
+	background-color: #222;
+	background: center repeat url("./assets/notitgbackground.png");
+}
+
+
+.modfilestitle {
+	font-family: "cozette";
+}
+
+
+#modfiles {
+	color: #eee;
+	position: absolute;
+	height: 100%;
+	width: 97%;
+	padding: 2%;
+
+	z-index: 2;
+
+	text-align: center;
+}
+
+
+.icon, .iconregular {
+    border: 5px solid #222;
+    border-radius: 32px;
+    background-color: #222;
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+
+    margin: 5px;
+    
+		transition: width 0.3s, height 0.3s, border-color 0.3s, background-color 0.3s;
+}
+
+.icon:hover {
+    border: 5px solid #555;
+    background-color: #555;
+    
+    width: 1.6em;
+    height: 1.6em;
+}
+
+.icon:hover img {
+    width: 1.6em;
+    height: 1.6em;
+}
+
+.icon img, .iconregular img {
+    width: 1.4em;
+    height: 1.4em;
+    transition: width 0.1s, height 0.1s, background-color 0.1s, border-color 0.1s;
+}
+.iconregular:hover {
+	border: 5px solid #999;
+	background-color: #999;
+}
+
+#song {
+    background-color: #aaf !important;
+    border-color: #aaf !important;
+}
+#song:hover {
+	background-color: #99e !important;
+	border-color: #99e !important;
+}
+
+#youtube {
+    background-color: #FF0000 !important;
+    border-color: #FF0000 !important;
+}
+#youtube:hover {
+	background-color: #AA0000 !important;
+	border-color: #AA0000 !important;
+}
+
+
+#obama {
+	color: #fff;
+  background: center / cover no-repeat url("./assets/obamabg.png");
+	background-color: #232;
+}
+#onef {
+	color: #fff;
+  background: center / cover no-repeat url("./assets/1fbg.png");
+	background-color: #006;
+}
+#starfactory {
+	color: #111;
+  background: center / cover no-repeat url("./assets/starfactorybg.png");
+	background-color: #fff;
+}
+#theyaremanycolors {
+	color: #eee;
+  background: center / cover no-repeat url("./assets/colorsbg.png");
+	background-color: #111;
+}
+#fuckwiththebaddest {
+	color: #fff;
+  background: center / cover no-repeat url("./assets/fuckbg.png");
+	background-color: #111;
+}
+#wakeup {
+	color: #eee;
+  background: center / cover no-repeat url("./assets/wakeupbg.png");
+	background-color: #111;
+}
+#worms {
+	color: #eee;
+  background: center / cover no-repeat url("./assets/wormsbg.png");
+	background-color: #111;
+}
+#sticky {
+	color: #eee;
+  background: center / cover no-repeat url("./assets/745stickybg.png");
+	background-color: #300;
+}
+#tungtiied {
+	color: #fff;
+  background: center / cover no-repeat url("./assets/tungtiiedbg.png");
+	background-color: #111;
+}
+#thanks {
+	color: #fff;
+  background: center / cover no-repeat url("./assets/thanksbg.png");
+	background-color: #144;
+}
+
+
+.file {
+	text-align: left;
+	width: 50%;
+	position: relative;
+	display: inline-block;
+	color: #eee;
+	background-color: #000;
+	box-shadow: 0px 0px 20px 3px #111;
+	margin: 2%;
+	margin-right: 0px;
+	padding: 2%;
+	border-radius: 25px;
+
+	text-shadow: 0px 0px 10px black;
+
+	animation-name: fadein-out;
+	animation-duration: 0.8s;
+	animation-fill-mode: both;
+
+	font-family: 'cabin';
+
+	min-width: 20em;
+}
+
+#ihavesex {
+	text-align: left;
+	width: 50%;
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	background-color: #000;
+  background: url("./assets/sexbg.gif");
+
+	animation-name: fadein-out;
+	animation-duration: 0.8s;
+	animation-fill-mode: both;
+
+	font-family: 'Times New Roman';
+
+	min-width: 20em;
+	margin: 2%;
+	margin-right: 0px;
+	padding: 2%;
+}
+
+.modfilestitle {
+	font-size: 30px;
+}
+.modfilestitle img {
+	height: 1.4em;
+	width: 1.4em;
+}
+
+.difficulty {
+	font-size: 36px;
+	text-shadow: none;
+	float: right;
+	color: #eee;
+}
+
+.hard, .expert, .challenge, .slumpage {
+	font-size: 1.4em;
+	text-shadow: -1px 1px 0 #000,
+		1px 1px 0 #000,
+ 		1px -1px 0 #000,
+		-1px -1px 0 #000;
+}
+
+.expert {
+	color: #8200a1;
+}
+.challenge {
+	color: #605ace;
+}
+.slumpage {
+	color: #b5b8ba;
+}
+
+.modname {
+	font-size: 1.4em;
+}
+
+/* animations */
+@keyframes fadein-out {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes spin {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
